@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        function show_prompt()
+        {
+            var name=prompt("Napisz imie","Napisz imie");
+            if (name!=null && name!="")
+            {
+                document.write("Witaj, "+name+"! Jak się masz?");
+            }
+        }
+        </script>
+    </head>
+    <input type="button" value="Prompt" onclick="show_prompt()">
+</html>
