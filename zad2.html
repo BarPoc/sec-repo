@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Przyklad nr 1</title>
+        <script>
+            function WinOpen1(){
+                window.open("obraz1.html","okienko1","toolbar=no,directories=no,menubar=no,height=280,width=260,top=200,left=200");
+            }
+            function WinOpen2(){
+                window.open("obraz2.html","okienko2","toolbar=no,directories=no,menubar=no,height=280,width=260,top=400,left=400");
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="button" name="przycisk" value="Strona 1" onclick="WinOpen1()">
+            <input type="button" name="przycisk" value="Strona 2" onclick="WinOpen2()">
+        </form>
+    </body>
+</html>
