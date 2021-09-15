@@ -1,0 +1,19 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            function uczen(imie, nazwisko, klasa, wiek)
+            {
+                this.imie = imie;
+                this.nazwisko = nazwisko;
+                this.klasa = klasa;
+                this.wiek = wiek;
+            }
+            uczen1 = new uczen('Jan', 'Kowalski', '3a', 18)
+            uczen2 = new uczen('Natalia', 'Kozlowska', '4b', 19)
+            uczen3 = new uczen('Piotr', 'Relski', '3c', 17)
+
+            document.write(uczen1.imie + " " + uczen1.nazwisko + ", " + uczen1.klasa + ", " + uczen1.wiek)
+        </script>
+    </body>
+</html>
