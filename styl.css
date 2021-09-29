@@ -1,0 +1,49 @@
+#dane{
+    background-color:gray;
+    font-size:28;
+    float:center;
+    padding:25px;
+    text-align:center;
+    align-content:right;
+}
+#dane a{
+    color: azure;
+}
+
+#lewy{
+    background-color:lightgray;
+    float:left;
+    text-align:center;
+    padding-bottom:45%;
+    font-size:24;
+    width:20%;
+    border:lightslategrey;
+}
+
+#centrum{
+    background-color:darkgray;
+    float:left;
+    text-align:left;
+    padding-bottom:45%;
+    width:60%;
+    font-size:32;
+}
+
+#prawy{
+    background-color:lightgray;
+    float:left;
+    text-align:center;
+    padding-bottom:45%;
+    font-size:24;
+    width:20%;
+    font-style:inherit;
+}
+
+a{
+    color:black;
+    text-decoration:none;
+}
+
+img{
+    border-radius: 50%;
+}
