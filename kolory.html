@@ -7,8 +7,11 @@
               var liczba1 = parseInt(a);
               var liczba2 = parseInt(b);
               var liczba3 = parseInt(c);
+              var liczba4 = parseInt(Math.random())^((Math.random()*20)+2);
+              var liczba5 = parseInt(Math.random())^((Math.random()*20)+2);
+              var liczba6 = parseInt(Math.random())^((Math.random()*20)+2);
                 lewa.innerHTML=liczba1+" dział artylerii, "+liczba2+" kawalerzystów, "+liczba3+" muszkieterów";
-             
+                prawa.innerHTML=liczba4+" dział artylerii, "+liczba5+" kawalerzystów, "+liczba6+" muszkieterów";
             }
         </script>
     </head>
@@ -21,6 +24,7 @@
             <h1>Nasza armia składa się z:</h1><br>
                 <table>
                     <tr style="font-size:24;" id="lewa"></tr>
+                    <tr id="prawa"></tr>
                 </table>
             </ul>
         </div>
