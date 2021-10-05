@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="kolory.css">
+        <script>
+            function liczby(a, b, c)
+            {
+              var liczba1 = parseInt(a);
+              var liczba2 = parseInt(b);
+              var liczba3 = parseInt(c);
+                lewa.innerHTML=liczba1+" dział artylerii, "+liczba2+" kawalerzystów, "+liczba3+" muszkieterów";
+             
+            }
+        </script>
+    </head>
+    <body>
+        
+        <div id="tytul">
+            <a href="https://pl.wikipedia.org/wiki/Burgundowie"><img src="herb.jpg" width="200" height="200"/></a><br><br><br>
+        </div>
+        <div id="lewy">
+            <h1>Nasza armia składa się z:</h1><br>
+                <table>
+                    <tr style="font-size:24;" id="lewa"></tr>
+                </table>
+            </ul>
+        </div>
+        <div id="prawy">
+            <br>
+            <form action="..." onsubmit="liczby(this.art.value, this.kaw.value, this.musz.value);return false">
+            Artyleria:<input type="number" name="art" ><br><br>
+            Kawaleria:<input type="number" name="kaw" ><br><br>
+            Muszkieterzy:<input type="number" name="musz" ><br><br><br>
+            <button type="submit">xd</button>
+        </form>
+            
+     
+        </div>
+        <div id="stopka">
+            <img src="rycerze.gif" width="400" height="250"/>
+        </div>
+
+    </body>
+</html>
