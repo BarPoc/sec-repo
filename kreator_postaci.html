@@ -1,0 +1,29 @@
+<html>
+    <head></head>
+        <body>
+            WYBIERZ KLASĘ:
+            <select id="wybor" onchange="wywolanie()">
+                <option value="b">Berserk</option>
+                <option value="s">Samuraj</option>
+                <option value="k">Kultysta</option>
+            </select>
+        <script>
+            function klasa(nazwa,HP,mana,umiejetnosci,funkcja){
+                this.nazwa = nazwa;
+                this.HP = hp;
+                this.mana = mana;
+                this.umiejetnosci = um;
+                this.funkcja = funk;
+            }
+            berserk = new klasa("Berserk",1200,150,"Cios pięścią, Fala uderzeniowa, Bokserski szał");
+            samuraj = new klasa("Samuraj",900,225,"Szybkie cięcie, Blok/Kontra, Samurajska szarża");
+            kultysta = new klasa("Kultysta",1000,300,"Atak kostura, Klątwa, Wskrzeszenie");
+
+            wywolanie()
+            {
+                var x = document.getElementById("wybor").value;
+                document.write("Nazwa: "+x.nazwa+"<br>HP: "+x.hp+"<br>Mana: "+x.mana+"<br>Umiejętności: "+x.um+"<br>Funkcja: "+x.funk);
+            }
+        </script>
+        </body>
+</html>
