@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <script type="text/javascript">
+            function oblicz(dane)
+            {
+                wynik.innerHTML=" ";
+                cena_koncowa=0;
+
+                if(dane.znizka[0].checked)
+                {
+                    cena_koncowa=0.95*parseFloat(dane.cena.value)
+                }
+                if(dane.znizka[1].checked)
+                {
+                    cena_koncowa=0.9*parseFloat(dane.cena.value)
+                }
+                if(dane.znizka[2].checked)
+                {
+                    cena_koncowa=0.8*parseFloat(dane.cena.value)
+                }
+                wynik.innerHTML="do zapłaty "+cena_koncowa.toFixed(2)+" zł";
+            }
+        </script>
+    </head>
+
+    <body>
+        <form name="formz">
+            <label>Cena</label> <input type="number" name="cena" />
+            <br>
+            <label>Ilość</label> <input type="number" name="ilosc" />
+            <br>
+            rabat 5% <input type="radio" name="znizka" value=5>
+            rabat 10% <input type="radio" name="znizka" value=10>
+            rabat 20% <input type="radio" name="znizka" value=20>
+            <br>
+            <input type="button" value="Oblicz....." onClick="oblicz(this.form)"/><br><br>
+        </form>
+        <table>
+            <tr id="wynik"></tr>
+        </table>
+    </body>
+</html>

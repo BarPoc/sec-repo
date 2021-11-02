@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script>
+            function obliczanie(dane)
+            {
+                wynik.innerHTML=" ";
+                cena_koncowa=0;
+
+                if(dane.vat1.checked==true)
+                {
+                    cena_koncowa=parseFloat(dane.cena.value);
+                }
+                if(dane.vat2.checked==true)
+                {
+                    cena_koncowa=1.07*parseFloat(dane.cena.value);
+                }
+                if(dane.vat3.checked==true)
+                {
+                    cena_koncowa=1.23*parseFloat(dane.cena.value);
+                }
+                wynik.innerHTML="Do zaplaty "+cena_koncowa.toFixed(2)+" zl";
+            }
+        </script>
+    </head>
+
+    <body>
+        <form name="formularz">
+            <label>Cena</label> <input type="number" name="cena" />
+            <br>
+            <label>Ilość</label> <input type="number" name="ilosc" />
+            <br>
+            VAT 0% <input type="checkbox" name="vat1" value=0/>
+            VAT 7% <input type="checkbox" name="vat2" value=0/>
+            VAT 23% <input type="checkbox" name="vat3" value=0/>
+            <br><br><br>
+            <input type="button" value="Oblicz" onClick="obliczanie(this.form)"/><br>
+        </form>
+        <table>
+            <tr id="wynik"></tr>
+        </table>
+    </body>
+</html>
